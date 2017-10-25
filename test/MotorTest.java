@@ -39,13 +39,13 @@ public class MotorTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
-      @Test
-    public void helloWorldCheck() {
+    @Test
+    public void speedTest() {
         assertEquals(50, mot.speed);
+    }
+    
+     @Test
+    public void speedIndicatorTest() {
+        assertEquals(mot.speedIndicator, mot.speed);
     }
 }

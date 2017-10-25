@@ -6,10 +6,12 @@
 package dd1;
 
 public class Motor {
-    public int speed;
-
+    public int speed; 
+    public int speedIndicator;
+    
     public Motor(int speed) {
         this.speed = speed;
+        speedIndicator = speed;
     }
     
     public void setSpeed(int newSpeed) {
@@ -21,6 +23,7 @@ public class Motor {
 
         }
         speed = newSpeed;
+        speedIndicator = speed;
     }
     
     
